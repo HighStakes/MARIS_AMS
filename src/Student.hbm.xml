@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.jwt.hibernate.bean.Student" table="Student">
+		 
+		<id name="id" type="integer" column="Id">
+			<generator class="increment" />
+		</id> 
+		
+		<property name="studentNumber" type="string" column="Student_Id"/>
+		<property name="firstName" type="string" column="First_Name"/>
+		<property name="lastName" type="string" column="Last_Name"/>
+		<property name="className" type="character" column="Class" />
+		<property name="section" type="character" column="Section" />
+		<property name="gender" type="string" column="Gender" />
+		<property name="subjects" type="string" column="Subjects" />
+		<property name="contact" type="string" column="Parent_Contact" />
+		 
+
+	</class>
+</hibernate-mapping>
